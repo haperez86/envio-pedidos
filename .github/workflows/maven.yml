@@ -25,6 +25,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn clean install
-           echo "build successful"
+      run:  | 
+          mvn clean install
+          echo "build successful"
 
